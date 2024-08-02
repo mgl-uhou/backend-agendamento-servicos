@@ -11,7 +11,7 @@ router.get('/profile', authMiddleware, userController.getProfile.bind(userContro
 router.post('/cadastro', userController.store.bind(userController));
 router.post('/login', userController.login.bind(userController));
 router.get('/user/:id', userController.show.bind(userController));
-router.put('/user/:id', authMiddleware, userController.update.bind(userController));
+router.put('/user', authMiddleware, userController.update.bind(userController));
 router.delete('/user', authMiddleware, userController.delete.bind(userController));
 
 router.get('/agendamentos', authMiddleware, agendamentoController.index.bind(agendamentoController));
