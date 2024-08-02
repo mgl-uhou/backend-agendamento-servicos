@@ -113,4 +113,4 @@ https://www.w3schools.com/
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
-> Miguel Ferreira
+> Miguel Laurentino
