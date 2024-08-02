@@ -152,7 +152,7 @@ class Pool {
 				process.env.email_adm || 'admin@gmail.com',
 				"email"
 			);
-			if (userExists.length !== 0) return;
+			if (userExists.length !== 0) return console.log("Administrador existente.");
 
 			const response = await axios.post(`http://${process.env.mysql_host}:${process.env.port}/cadastro`, {
 				nome: process.env.nome_adm || 'Admin',

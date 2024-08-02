@@ -7,7 +7,7 @@ class AgendamentoController extends Controller{
 	}
 
 	async index(request, response) {
-		if(!request.user.id || !request.user.administrador) return res.status(401).send("Não autorizado.")
+		if(!request.user.id || !request.user.administrador) return response.status(401).send("Não autorizado.")
 		let result = await repository.getAllOrderByDate(this.getNomeTabela());
 		response.json(result);
 	}
